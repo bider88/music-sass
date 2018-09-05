@@ -1,0 +1,31 @@
+/*----------------------*\
+    $BUTTONS
+/*----------------------*/
+
+.buttons {
+    display: inline-block;
+    color: $button-color;
+    background: $button-background;
+    line-height: 2.5;
+    border-radius: $border-radius;
+    font-size: $button-font-size;
+
+    // BEM - Block Element Modifier 
+    &.__icon {
+        font-size: .6em;
+    }
+
+    // Modifier
+    &.btn--info {
+        background-color: $color-info;
+    }
+}
+    // // BEM - Block Element Modifier 
+    // .btn__icon {
+    //     font-size: .6em;
+    // }
+
+    // // Modifier
+    // .btn--info {
+    //     background-color: $color-info;
+    // }
