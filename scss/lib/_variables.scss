@@ -7,11 +7,16 @@ $color-brand:       #ea83ee;
 $color-secondary:   rgb(219, 216, 121);
 
 $color-black:       #000;
-$color-dark-grey:   #4d4d4d;
-$color-light-grey:  #bfbfbf;
+$color-grey:        #737373;
+// Oscurece $color-grey un 25%
+$color-dark-grey:   darken($color-grey, 25%);
+// Aclara $color-grey un 25%
+$color-light-grey:  lighten($color-grey, 25%);
 $color-white:       #fff;
 
 /* Texture colors */
+$color-border: $color-dark-grey;
+
 $color-primary:     #3b679e;
 $color-success:     rgb(91, 183, 91);
 $color-warning:     rgb(255, 193, 7);
@@ -22,6 +27,13 @@ $color-alert:       rgb(252, 228, 207);
 /* Typographies */
 $basefont: 'Quicksand', sans-serif;
 $basefont-size: 16px;
+$baseheadingfont: $basefont;
+$baseheadingfontweight: bold;
+$altfont : Georgia, Times, "Times New Roman";
+$codefont : "Courier New", monospace;
+$lineheight: 1.5;
+$textcolor: $color-black;
+$color-background: darken($color-white, 5);
 
 /* Buttons */
 $button-color:      $color-white;
