@@ -3,5 +3,7 @@
 /*----------------------*/
 
 section {
-    @include max-width;
+    @include max-width(800px);
+    background: $color-light-grey;
+    padding: $padding;
 }
